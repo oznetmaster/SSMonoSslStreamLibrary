@@ -1,0 +1,240 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{593CCAD8-EB95-40F2-B411-94AF47F28A4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSMonoSslStreamLibrary</RootNamespace>
+    <AssemblyName>SSMonoSslStreamLibrary</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETCF;SSHARP;NET_2_0; NET_3_5;SECURITY_DEP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <NoWarn>3021</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <DefineConstants>NETCF;SSHARP;NET_2_0; NET_3_5;;SECURITY_DEP</DefineConstants>
+    <NoWarn>3021</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SSCoreMiniDiagnosticsLibrary, Version=1.0.0.20784, Culture=neutral, processorArchitecture=MSIL" Condition="'$(Configuration)'=='Release'">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSCoreMiniDiagnosticsLibrary\SSCoreMiniDiagnosticsLibrary\bin\Release\SSCoreMiniDiagnosticsLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SSCoreMiniDiagnosticsLibrary, Version=1.0.0.20784, Culture=neutral, processorArchitecture=MSIL" Condition="'$(Configuration)'=='Debug'">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSCoreMiniDiagnosticsLibrary\SSCoreMiniDiagnosticsLibrary\bin\Release\SSCoreMiniDiagnosticsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpCrestronExtensionsLibrary, Version=1.0.0.20479, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpCrestronExtensionsLibrary\SSharpCrestronExtensionsLibrary\bin\Release\SSharpCrestronExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpThreadingLibrary, Version=1.0.0.20433, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpThreadingLibrary\SSharpThreadingLibrary\bin\Release\SSharpThreadingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoCryptographyExtensions, Version=1.0.0.23506, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoCryptographyLibrary\SSMonoCryptographyExtensions\bin\Release\SSMonoCryptographyExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoCryptographyLibrary, Version=1.0.0.34637, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoCryptographyLibrary\SSMonoCryptographyLibrary\bin\Release\SSMonoCryptographyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetLibrary, Version=1.0.0.20575, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoNetLibrary\SSMonoNetLibrary\bin\Release\SSMonoNetLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSupportLibrary, Version=1.0.0.20428, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSupportLibrary\bin\Release\SSMonoSupportLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoThreadPoolLibrary, Version=1.0.0.20920, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoThreadingLibrary\SSMonoThreadPoolLibrary\bin\Release\SSMonoThreadPoolLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoTupleLibrary, Version=1.0.0.20438, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoTupleLibrary\SSMonoTupleLibrary\bin\Release\SSMonoTupleLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoX509CertificatesLibrary, Version=1.0.0.20348, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoX509CertificatesLibrary\SSMonoX509CertificatesLibrary\bin\Release\SSMonoX509CertificatesLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthenticatedStream.cs" />
+    <Compile Include="AuthenticationLevel.cs" />
+    <Compile Include="Authentication\AuthenticationException.cs" />
+    <Compile Include="Authentication\CipherAlgorithmType.cs" />
+    <Compile Include="Authentication\ExchangeAlgorithmType.cs" />
+    <Compile Include="Authentication\HashAlgorithmType.cs" />
+    <Compile Include="Authentication\InvalidCredentialException.cs" />
+    <Compile Include="Authentication\SslProtocols.cs" />
+    <Compile Include="Compatibility\AsyncCallbackExtensions.cs" />
+    <Compile Include="LocalCertificateSelectionCallback.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Alert.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\CipherAlgorithmType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\CipherSuite.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\CipherSuiteCollection.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\CipherSuiteFactory.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ClientContext.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ClientRecordProtocol.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ClientSessionCache.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ContentType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Context.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\DebugHelper.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ExchangeAlgorithmType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\HandshakeState.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\ClientCertificateType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsClientCertificate.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsClientCertificateVerify.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsClientFinished.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsClientHello.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsClientKeyExchange.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsServerCertificate.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsServerCertificateRequest.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsServerFinished.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsServerHello.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsServerHelloDone.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Client\TlsServerKeyExchange.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\HandshakeMessage.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\HandshakeType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsClientCertificate.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsClientCertificateVerify.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsClientFinished.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsClientHello.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsClientKeyExchange.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsServerCertificate.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsServerCertificateRequest.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsServerFinished.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsServerHello.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsServerHelloDone.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Handshake\Server\TlsServerKeyExchange.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\HashAlgorithmType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\RecordProtocol.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SecurityCompressionType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SecurityParameters.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SecurityProtocolType.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ServerContext.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ServerRecordProtocol.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SslCipherSuite.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SslClientStream.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SslHandshakeHash.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SslServerStream.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\SslStreamBase.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsCipherSuite.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsClientSettings.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsException.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsServerSettings.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsStream.cs" />
+    <Compile Include="Mono.Security\PermissionSet_2_1.cs" />
+    <Compile Include="Mono.Security\SecurityException_2_1.cs" />
+    <Compile Include="Mono.Security\SecurityZone.cs" />
+    <Compile Include="NegotiateStream.cs" />
+    <Compile Include="Net\ICredentials.cs" />
+    <Compile Include="Net\ICredentialsByHost.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net\NetworkCredential.cs" />
+    <Compile Include="Principal\CrestronAuthenticationCompatibility.cs" />
+    <Compile Include="Principal\IdentityNotMappedException.cs" />
+    <Compile Include="Principal\IdentityReference.cs" />
+    <Compile Include="Principal\IdentityReferenceCollection.cs" />
+    <Compile Include="Principal\NTAccount.cs" />
+    <Compile Include="Principal\PrincipalPolicy.cs" />
+    <Compile Include="Principal\SecurityIdentifier.cs" />
+    <Compile Include="Principal\TokenAccessLevels.cs" />
+    <Compile Include="Principal\TokenImpersonationLevel.cs" />
+    <Compile Include="Principal\WellKnownAccount.cs" />
+    <Compile Include="Principal\WellKnownSidType.cs" />
+    <Compile Include="Principal\WindowsAccountType.cs" />
+    <Compile Include="Principal\WindowsBuiltInRole.cs" />
+    <Compile Include="Principal\WindowsIdentity.cs" />
+    <Compile Include="Principal\WindowsPrincipal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtectionLevel.cs" />
+    <Compile Include="RemoteCertificateValidationCallback.cs" />
+    <Compile Include="SslPolicyErrors.cs" />
+    <Compile Include="SslStream.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{0B4745B0-194B-4BB6-8E21-E9057CA92500}">
+        <ProgramIdTag>SSMonoSslStreamLibra</ProgramIdTag>
+        <SystemName>SSMonoSslStreamLibrary</SystemName>
+        <Programmer />
+        <ArchiveFilename>C:\Projects\Crestron\Simpl# Libraries\SSMonoSslStreamLibrary\SSMonoSslStreamLibrary\bin\Release\SSMonoSslStreamLibrary.clz</ArchiveFilename>
+        <MinFirmwareVersion>1.007.0017</MinFirmwareVersion>
+        <CompiledOn>5/9/2016 12:47:05 PM</CompiledOn>
+        <AdditionalInfo />
+        <EmbedSourceArchive>False</EmbedSourceArchive>
+        <CopyTo />
+        <OriginalReferenceSources>
+          <Reference sourceFilename="../../SSMonoSupportLibrary/bin/Release/SSMonoSupportLibrary.dll" referenceName="SSMonoSupportLibrary" />
+          <Reference sourceFilename="../../SSMonoNetLibrary/SSMonoNetLibrary/bin/Release/SSMonoNetLibrary.dll" referenceName="SSMonoNetLibrary" />
+          <Reference sourceFilename="../../SSMonoCryptographyLibrary/SSMonoCryptographyLibrary/bin/Release/SSMonoCryptographyLibrary.dll" referenceName="SSMonoCryptographyLibrary" />
+          <Reference sourceFilename="../../SSCoreMiniDiagnosticsLibrary/SSCoreMiniDiagnosticsLibrary/bin/Release/SSCoreMiniDiagnosticsLibrary.dll" referenceName="SSCoreMiniDiagnosticsLibrary" />
+          <Reference sourceFilename="../../SSharpCrestronExtensionsLibrary/SSharpCrestronExtensionsLibrary/bin/Release/SSharpCrestronExtensionsLibrary.dll" referenceName="SSharpCrestronExtensionsLibrary" />
+          <Reference sourceFilename="../../SSMonoX509CertificatesLibrary/SSMonoX509CertificatesLibrary/bin/Release/SSMonoX509CertificatesLibrary.dll" referenceName="SSMonoX509CertificatesLibrary" />
+          <Reference sourceFilename="../../SSMonoThreadingLibrary/SSMonoThreadPoolLibrary/bin/Release/SSMonoThreadPoolLibrary.dll" referenceName="SSMonoThreadPoolLibrary" />
+          <Reference sourceFilename="../../SSMonoTupleLibrary/SSMonoTupleLibrary/bin/Release/SSMonoTupleLibrary.dll" referenceName="SSMonoTupleLibrary" />
+          <Reference sourceFilename="../../SSharpThreadingLibrary/SSharpThreadingLibrary/bin/Release/SSharpThreadingLibrary.dll" referenceName="SSharpThreadingLibrary" />
+          <Reference sourceFilename="../../SSMonoCryptographyLibrary/SSMonoCryptographyExtensions/bin/Release/SSMonoCryptographyExtensions.dll" referenceName="SSMonoCryptographyExtensions" />
+        </OriginalReferenceSources>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>rem  S# preparation will execute after these operations</PostBuildEvent>
+  </PropertyGroup>
+</Project>
