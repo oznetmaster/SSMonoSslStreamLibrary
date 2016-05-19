@@ -29,7 +29,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NETCF;SSHARP;NET_2_0; NET_3_5;SECURITY_DEP</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;NETCF;SSHARP;NET_2_0; NET_3_5;SECURITY_DEP;SSL</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <FileAlignment>512</FileAlignment>
@@ -111,14 +111,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthenticatedStream.cs" />
-    <Compile Include="AuthenticationLevel.cs" />
     <Compile Include="Authentication\AuthenticationException.cs" />
     <Compile Include="Authentication\CipherAlgorithmType.cs" />
     <Compile Include="Authentication\ExchangeAlgorithmType.cs" />
     <Compile Include="Authentication\HashAlgorithmType.cs" />
     <Compile Include="Authentication\InvalidCredentialException.cs" />
     <Compile Include="Authentication\SslProtocols.cs" />
-    <Compile Include="Compatibility\AsyncCallbackExtensions.cs" />
     <Compile Include="LocalCertificateSelectionCallback.cs" />
     <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\Alert.cs" />
     <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\CipherAlgorithmType.cs" />
@@ -175,15 +173,13 @@
     <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsException.cs" />
     <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsServerSettings.cs" />
     <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\TlsStream.cs" />
+    <Compile Include="Mono.Security\Mono.Security.Protocol.Tls\ValidationResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Mono.Security\PermissionSet_2_1.cs" />
     <Compile Include="Mono.Security\SecurityException_2_1.cs" />
     <Compile Include="Mono.Security\SecurityZone.cs" />
     <Compile Include="NegotiateStream.cs" />
-    <Compile Include="Net\ICredentials.cs" />
-    <Compile Include="Net\ICredentialsByHost.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Net\NetworkCredential.cs" />
     <Compile Include="Principal\CrestronAuthenticationCompatibility.cs" />
     <Compile Include="Principal\IdentityNotMappedException.cs" />
     <Compile Include="Principal\IdentityReference.cs" />
@@ -215,19 +211,16 @@
         <Programmer />
         <ArchiveFilename>C:\Projects\Crestron\Simpl# Libraries\SSMonoSslStreamLibrary\SSMonoSslStreamLibrary\bin\Release\SSMonoSslStreamLibrary.clz</ArchiveFilename>
         <MinFirmwareVersion>1.007.0017</MinFirmwareVersion>
-        <CompiledOn>5/9/2016 12:47:05 PM</CompiledOn>
+        <CompiledOn>5/18/2016 8:06:54 AM</CompiledOn>
         <AdditionalInfo />
         <EmbedSourceArchive>False</EmbedSourceArchive>
         <CopyTo />
         <OriginalReferenceSources>
           <Reference sourceFilename="../../SSMonoSupportLibrary/bin/Release/SSMonoSupportLibrary.dll" referenceName="SSMonoSupportLibrary" />
           <Reference sourceFilename="../../SSMonoNetLibrary/SSMonoNetLibrary/bin/Release/SSMonoNetLibrary.dll" referenceName="SSMonoNetLibrary" />
-          <Reference sourceFilename="../../SSMonoCryptographyLibrary/SSMonoCryptographyLibrary/bin/Release/SSMonoCryptographyLibrary.dll" referenceName="SSMonoCryptographyLibrary" />
           <Reference sourceFilename="../../SSCoreMiniDiagnosticsLibrary/SSCoreMiniDiagnosticsLibrary/bin/Release/SSCoreMiniDiagnosticsLibrary.dll" referenceName="SSCoreMiniDiagnosticsLibrary" />
           <Reference sourceFilename="../../SSharpCrestronExtensionsLibrary/SSharpCrestronExtensionsLibrary/bin/Release/SSharpCrestronExtensionsLibrary.dll" referenceName="SSharpCrestronExtensionsLibrary" />
-          <Reference sourceFilename="../../SSMonoX509CertificatesLibrary/SSMonoX509CertificatesLibrary/bin/Release/SSMonoX509CertificatesLibrary.dll" referenceName="SSMonoX509CertificatesLibrary" />
           <Reference sourceFilename="../../SSMonoThreadingLibrary/SSMonoThreadPoolLibrary/bin/Release/SSMonoThreadPoolLibrary.dll" referenceName="SSMonoThreadPoolLibrary" />
-          <Reference sourceFilename="../../SSMonoTupleLibrary/SSMonoTupleLibrary/bin/Release/SSMonoTupleLibrary.dll" referenceName="SSMonoTupleLibrary" />
           <Reference sourceFilename="../../SSharpThreadingLibrary/SSharpThreadingLibrary/bin/Release/SSharpThreadingLibrary.dll" referenceName="SSharpThreadingLibrary" />
           <Reference sourceFilename="../../SSMonoCryptographyLibrary/SSMonoCryptographyExtensions/bin/Release/SSMonoCryptographyExtensions.dll" referenceName="SSMonoCryptographyExtensions" />
         </OriginalReferenceSources>

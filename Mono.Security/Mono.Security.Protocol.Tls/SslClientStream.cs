@@ -53,6 +53,8 @@ namespace Mono.Security.Protocol.Tls
 	delegate bool CertificateValidationCallback(
 		X509Certificate certificate,
 		int[] certificateErrors);
+
+#if !SSHARP
 #if INSIDE_SYSTEM
 	internal
 #else
@@ -86,6 +88,7 @@ namespace Mono.Security.Protocol.Tls
 			get { return error_code; }
 			}
 		}
+#endif
 
 #if INSIDE_SYSTEM
 	internal
