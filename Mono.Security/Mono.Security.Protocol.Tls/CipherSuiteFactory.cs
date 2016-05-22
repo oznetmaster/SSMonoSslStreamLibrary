@@ -59,7 +59,9 @@ namespace Mono.Security.Protocol.Tls
 					throw new NotSupportedException ("Unsupported security protocol type");
 				}
 
+#if INSIDE_SYSTEM || (!BOOTSTRAP_BASIC  && !SSHARP) 
 			IEnumerable<string> list = null;
+#endif
 #if INSIDE_SYSTEM
 	// if SSL/TLS support is built-in System.dll (e.g. monotouch) then we can access ServicePointManager
 	// extension directly
@@ -98,6 +100,7 @@ namespace Mono.Security.Protocol.Tls
 	// TODO: right now the callback is only available when using System.Net.* types for SSL/TLS
 			return suites;
 #endif
+#if INSIDE_SYSTEM || (!BOOTSTRAP_BASIC  && !SSHARP) 
 			CipherSuiteCollection allowed = new CipherSuiteCollection (protocol);
 			if (list != null)
 				{
@@ -110,6 +113,7 @@ namespace Mono.Security.Protocol.Tls
 					}
 				}
 			return allowed;
+#endif
 			}
 
 		#region Private Static Methods
