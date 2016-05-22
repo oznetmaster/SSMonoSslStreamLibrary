@@ -73,6 +73,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SSharpCrestronExtensionsLibrary\SSharpCrestronExtensionsLibrary\bin\Release\SSharpCrestronExtensionsLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="SSharpReflectionExtensionsLibrary, Version=1.0.0.12431, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpReflectionExtensionsLibrary\SSharpReflectionExtensionsLibrary\bin\Release\SSharpReflectionExtensionsLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="SSharpThreadingLibrary, Version=1.0.0.20433, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\SSharpThreadingLibrary\SSharpThreadingLibrary\bin\Release\SSharpThreadingLibrary.dll</HintPath>
@@ -211,7 +215,7 @@
         <Programmer />
         <ArchiveFilename>C:\Projects\Crestron\Simpl# Libraries\SSMonoSslStreamLibrary\SSMonoSslStreamLibrary\bin\Release\SSMonoSslStreamLibrary.clz</ArchiveFilename>
         <MinFirmwareVersion>1.007.0017</MinFirmwareVersion>
-        <CompiledOn>5/23/2016 5:34:31 AM</CompiledOn>
+        <CompiledOn>5/23/2016 6:56:37 AM</CompiledOn>
         <AdditionalInfo />
         <EmbedSourceArchive>False</EmbedSourceArchive>
         <CopyTo />
@@ -223,6 +227,7 @@
           <Reference sourceFilename="../../SSMonoThreadingLibrary/SSMonoThreadPoolLibrary/bin/Release/SSMonoThreadPoolLibrary.dll" referenceName="SSMonoThreadPoolLibrary" />
           <Reference sourceFilename="../../SSharpThreadingLibrary/SSharpThreadingLibrary/bin/Release/SSharpThreadingLibrary.dll" referenceName="SSharpThreadingLibrary" />
           <Reference sourceFilename="../../SSMonoCryptographyLibrary/SSMonoCryptographyExtensions/bin/Release/SSMonoCryptographyExtensions.dll" referenceName="SSMonoCryptographyExtensions" />
+          <Reference sourceFilename="../../SSharpReflectionExtensionsLibrary/SSharpReflectionExtensionsLibrary/bin/Release/SSharpReflectionExtensionsLibrary.dll" referenceName="SSharpReflectionExtensionsLibrary" />
         </OriginalReferenceSources>
       </FlavorProperties>
     </VisualStudio>
