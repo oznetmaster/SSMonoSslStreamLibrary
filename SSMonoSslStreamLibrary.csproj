@@ -209,6 +209,27 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
+      <FlavorProperties GUID="{0B4745B0-194B-4BB6-8E21-E9057CA92500}">
+        <ProgramIdTag>SSMonoSslStreamLibra</ProgramIdTag>
+        <SystemName>SSMonoSslStreamLibrary</SystemName>
+        <Programmer />
+        <ArchiveFilename>C:\Projects\Crestron\Simpl# Libraries\SSMonoSslStreamLibrary\SSMonoSslStreamLibrary\bin\Release\SSMonoSslStreamLibrary.clz</ArchiveFilename>
+        <MinFirmwareVersion>1.007.0017</MinFirmwareVersion>
+        <CompiledOn>5/23/2016 6:56:37 AM</CompiledOn>
+        <AdditionalInfo />
+        <EmbedSourceArchive>False</EmbedSourceArchive>
+        <CopyTo />
+        <OriginalReferenceSources>
+          <Reference sourceFilename="../../SSMonoSupportLibrary/bin/Release/SSMonoSupportLibrary.dll" referenceName="SSMonoSupportLibrary" />
+          <Reference sourceFilename="../../SSMonoNetLibrary/SSMonoNetLibrary/bin/Release/SSMonoNetLibrary.dll" referenceName="SSMonoNetLibrary" />
+          <Reference sourceFilename="../../SSCoreMiniDiagnosticsLibrary/SSCoreMiniDiagnosticsLibrary/bin/Release/SSCoreMiniDiagnosticsLibrary.dll" referenceName="SSCoreMiniDiagnosticsLibrary" />
+          <Reference sourceFilename="../../SSharpCrestronExtensionsLibrary/SSharpCrestronExtensionsLibrary/bin/Release/SSharpCrestronExtensionsLibrary.dll" referenceName="SSharpCrestronExtensionsLibrary" />
+          <Reference sourceFilename="../../SSMonoThreadingLibrary/SSMonoThreadPoolLibrary/bin/Release/SSMonoThreadPoolLibrary.dll" referenceName="SSMonoThreadPoolLibrary" />
+          <Reference sourceFilename="../../SSharpThreadingLibrary/SSharpThreadingLibrary/bin/Release/SSharpThreadingLibrary.dll" referenceName="SSharpThreadingLibrary" />
+          <Reference sourceFilename="../../SSMonoCryptographyLibrary/SSMonoCryptographyExtensions/bin/Release/SSMonoCryptographyExtensions.dll" referenceName="SSMonoCryptographyExtensions" />
+          <Reference sourceFilename="../../SSharpReflectionExtensionsLibrary/SSharpReflectionExtensionsLibrary/bin/Release/SSharpReflectionExtensionsLibrary.dll" referenceName="SSharpReflectionExtensionsLibrary" />
+        </OriginalReferenceSources>
+      </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
