@@ -99,7 +99,11 @@ namespace System.Security.Principal
 		BuiltinPerformanceLoggingUsersSid,
 		BuiltinAuthorizationAccessSid,
 		WinBuiltinTerminalServerLicenseServersSid,
+#if SSHARP
+		MaxDefined
+#else
 		MaxDefined = WinBuiltinTerminalServerLicenseServersSid
+#endif
 		}
 	}
 

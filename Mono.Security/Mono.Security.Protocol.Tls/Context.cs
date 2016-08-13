@@ -424,7 +424,7 @@ namespace Mono.Security.Protocol.Tls
 #if NETCF
 		public SecurityProtocolType DecodeProtocolCode (short code)
 			{
-			return DecodeProtocolCode (code, false);
+			return DecodeProtocolCode (code, true);
 			}
 
 		public SecurityProtocolType DecodeProtocolCode (short code, bool allowFallback)
